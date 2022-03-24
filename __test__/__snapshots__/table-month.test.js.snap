@@ -15,7 +15,7 @@ exports[`TableMonth correct render 1`] = `
         class="mx-icon-double-left"
       />
     </button>
-     
+
     <button
       class="mx-btn mx-btn-text mx-btn-icon-double-right"
       type="button"
@@ -24,7 +24,7 @@ exports[`TableMonth correct render 1`] = `
         class="mx-icon-double-right"
       />
     </button>
-     
+
     <span
       class="mx-calendar-header-label"
     >
@@ -32,13 +32,13 @@ exports[`TableMonth correct render 1`] = `
         class="mx-btn mx-btn-text"
         type="button"
       >
-        
+
         2019
-      
+
       </button>
     </span>
   </div>
-   
+
   <div
     class="mx-calendar-content"
   >

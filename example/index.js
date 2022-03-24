@@ -1,6 +1,6 @@
 import App from './app';
 
-window.DatePicker.locale('en');
+window.DatePicker.locale('th');
 
 new window.Vue({
   render: h =>

@@ -219,7 +219,7 @@ export default {
   created() {
     if (typeof this.format === 'object') {
       console.warn(
-        "[vue2-datepicker]: The prop `format` don't support Object any more. You can use the new prop `formatter` to replace it"
+        "[vue2-thai-datepicker]: The prop `format` don't support Object any more. You can use the new prop `formatter` to replace it"
       );
     }
   },
@@ -255,7 +255,11 @@ export default {
       if (typeof this.getFormatter('stringify') === 'function') {
         return this.getFormatter('stringify')(date, fmt);
       }
-      return format(date, fmt, { locale: this.locale.formatLocale });
+      const fmt2 =  (`${fmt}`).replace("YYYY",'QQQQ');
+      let str = format(date, fmt2, { locale: this.locale.formatLocale });
+      const year = date.getYear()+1900+543;
+      str = str.replace('QQQQ',year)
+      return str;
     },
     // transform the outer value to inner date
     value2date(value) {

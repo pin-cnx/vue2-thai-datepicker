@@ -15,7 +15,7 @@ exports[`TableYear decade=2010 1`] = `
         class="mx-icon-double-left"
       />
     </button>
-     
+
     <button
       class="mx-btn mx-btn-text mx-btn-icon-double-right"
       type="button"
@@ -24,24 +24,24 @@ exports[`TableYear decade=2010 1`] = `
         class="mx-icon-double-right"
       />
     </button>
-     
+
     <span
       class="mx-calendar-header-label"
     >
       <span>
         2010
       </span>
-       
+
       <span
         class="mx-calendar-decade-separator"
       />
-       
+
       <span>
-        2019
+        2562
       </span>
     </span>
   </div>
-   
+
   <div
     class="mx-calendar-content"
   >
@@ -131,10 +131,10 @@ exports[`TableYear decade=2010 1`] = `
         </td>
         <td
           class="cell"
-          data-year="2019"
+          data-year="2562"
         >
           <div>
-            2019
+            2562
           </div>
         </td>
       </tr>

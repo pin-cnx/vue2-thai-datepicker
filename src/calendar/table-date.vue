@@ -195,7 +195,11 @@ export default {
       }
     },
     formatDate(date, fmt) {
-      return format(date, fmt, { locale: this.getLocale().formatLocale });
+      const fmt2 =  (`${fmt}`).replace("YYYY",'QQQQ');
+      let str = format(date, fmt2, { locale: this.getLocale().formatLocale });
+      const year = date.getYear()+1900+543;
+      str = str.replace('QQQQ',year)
+      return str;
     },
     getCellTitle(date) {
       const fmt = this.titleFormat;

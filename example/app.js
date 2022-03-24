@@ -136,7 +136,7 @@ const App = {
       return location.hash.slice(1);
     },
     handleChangeLocale() {
-      const lang = this.lang === 'en' ? 'zh-cn' : 'en';
+      const lang = this.lang === 'en' ? 'th' : 'en';
       this.lang = lang;
       this.changeLocale(lang);
     },
@@ -155,13 +155,13 @@ const App = {
           <a
             style="margin-right: 10px"
             class="mx-btn-text mx-btn"
-            href="https://github.com/mengxiong10/vue2-datepicker"
+            href="https://github.com/pin-cnx/vue2-thai-datepicker"
             target="_blank"
           >
             GitHub
           </a>
           <button onClick={this.handleChangeLocale} class="mx-btn">
-            {this.lang === 'en' ? '中文' : 'English'}
+            {this.lang === 'en' ? 'ไทย' : 'English'}
           </button>
         </div>
         <div key={this.lang}>

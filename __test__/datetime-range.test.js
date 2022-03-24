@@ -52,7 +52,7 @@ describe('DatetimeRange', () => {
     await td.trigger('click');
     expect(wrapper.emitted().select).toBeUndefined();
     const timeTitle = wrapper.find('.mx-time-header-title');
-    expect(timeTitle.text()).toBe('2019-10-02');
+    expect(timeTitle.text()).toBe('2562-10-02');
     const defaultValue = [new Date(2019, 9, 2, 12), new Date(2019, 9, 2, 12)];
     await wrapper.setProps({ defaultValue });
     await td.trigger('click');

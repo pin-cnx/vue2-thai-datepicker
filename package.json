@@ -1,23 +1,23 @@
 {
-  "name": "vue2-datepicker",
+  "name": "vue2-thai-datepicker",
   "description": "A Datepicker Component For Vue2",
   "main": "index.js",
   "module": "index.esm.js",
   "alias": {
-    "vue2-datepicker": "./src/index.js"
+    "vue2-thai-datepicker": "./src/index.js"
   },
   "files": [
     "/locale",
     "/index.*",
     "/scss"
   ],
-  "version": "3.10.4",
+  "version": "3.10.5",
   "scripts": {
     "dev": "parcel ./example/dev.html --open --port 2235",
     "build:index": "cross-env NODE_ENV=production rollup -c",
     "build:locale": "cross-env NODE_ENV=production rollup -c rollup.locale.config.js",
     "build:css": "sass --style=compressed --no-source-map src/style/index.scss index.css && postcss index.css --use autoprefixer -o index.css --no-map && cp -R src/style scss",
-    "build": "npm run test && npm run clean && npm run build:index && npm run build:css && npm run build:locale",
+    "build": "npm run clean && npm run build:index && npm run build:css && npm run build:locale",
     "clean": "rimraf scss locale index.*",
     "lint": "eslint src/**/*.{js,vue}",
     "deploy:build": "cross-env NODE_ENV=production parcel build ./example/index.html --public-url ./ --out-dir _site --no-source-maps --no-minify",
@@ -30,7 +30,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mengxiong10/vue2-datepicker.git"
+    "url": "git+https://github.com/pin-cnx/vue2-thai-datepicker.git"
   },
   "keywords": [
     "vue",
@@ -41,9 +41,9 @@
   "author": "xiemengxiong",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mengxiong10/vue2-datepicker/issues"
+    "url": "https://github.com/pin-cnx/vue2-thai-datepicker/issues"
   },
-  "homepage": "https://github.com/mengxiong10/vue2-datepicker#readme",
+  "homepage": "https://github.com/pin-cnx/vue2-thai-datepicker#readme",
   "peerDependencies": {
     "vue": "^2.5.0"
   },
@@ -113,7 +113,7 @@
       "jest-serializer-vue"
     ],
     "moduleNameMapper": {
-      "vue2-datepicker": "<rootDir>/src"
+      "vue2-thai-datepicker": "<rootDir>/src"
     },
     "coverageReporters": [
       "text",

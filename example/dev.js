@@ -3,12 +3,12 @@ import Vue from 'vue';
 
 import DatePicker from '../src/index';
 import '../src/style/index.scss';
-import '../src/locale/zh-cn';
+import '../src/locale/th';
 
 import App from './app';
 
 DatePicker.install(Vue);
-DatePicker.locale('en');
+DatePicker.locale('th');
 
 new Vue({
   render: h =>
